@@ -2,7 +2,7 @@
 
   <% @bookmarks.each do |bookmark| %>
     <li>Website: <%=bookmark["name"]%></li>
-      <li>Link: <%=bookmark["url"]%></li>
+      <li>Link: <a href = 'http://<%=bookmark["url"]%>'><%=bookmark["url"]%></a></li>
       <li>Genre: <%=bookmark["genre"]%></li>
       <li>Details <%=bookmark["details"]%></li>
    </ul> 

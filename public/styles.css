@@ -3,9 +3,9 @@ background-color: red;
 
 }
 
-section {
-height: ;
-background-image: url('/img/imgres-1.jpg');
+#welcome  {
+min-height: 500px;
+background-image: url('img/libary.jpg');
 background-repeat: no-repeat;
 background-size: cover;
 font-size: 2em;

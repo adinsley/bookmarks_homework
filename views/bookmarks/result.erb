@@ -1,12 +1,10 @@
-
-
 <ul>
 
   <% @bookmarks.each do |bookmark| %>
-    <li>Website: <%=bookmark[:name]%></li>
-      <li>Link: <%=bookmark[:url]%></li>
-      <li>Genre: <%=bookmark[:genre]%></li>
-      <li>Details <%=bookmark[:details]%></li>
+    <li>Website: <%=bookmark["name"]%></li>
+      <li>Link: <%=bookmark["url"]%></li>
+      <li>Genre: <%=bookmark["genre"]%></li>
+      <li>Details <%=bookmark["details"]%></li>
    </ul> 
       
       <form action = '/bookmarks/<%=bookmark[:id]%>/edit' method = 'get'>

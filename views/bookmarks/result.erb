@@ -1,0 +1,21 @@
+
+
+<ul>
+
+  <% @bookmarks.each do |bookmark| %>
+    <li>Website: <%=bookmark[:name]%></li>
+      <li>Link: <%=bookmark[:url]%></li>
+      <li>Genre: <%=bookmark[:genre]%></li>
+      <li>Details <%=bookmark[:details]%></li>
+   </ul> 
+      
+      <form action = '/bookmarks/<%=bookmark[:id]%>/edit' method = 'get'>
+      <button>Edit</button>
+      </form>
+
+
+      <form action = '/bookmarks/<%=bookmark[:id]%>/delete' method = 'post'>
+      <button>Delete</button>
+      </form>
+    
+  <%end %>
